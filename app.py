@@ -3,7 +3,7 @@ import streamlit as st
 import joblib
 
 # Load the model
-model = joblib.load('model.picle')
+model = joblib.load('model.pkl','rb')
 
 # Streamlit UI setup
 st.title("Titanic Survival Prediction App")
