@@ -21,7 +21,7 @@ class2_ = st.selectbox("Passenger Class", [1, 2, 3])
 # Process input data
 def process_input(age, SibSp, Parch, Fare, sex, class_,class2_):
     sex_value = 1 if sex == 'Male' else 0
-    return np.array([[age,SibSp,Parch,Fare sex_value, class_, class2_]])
+    return np.array([[age,SibSp,Parch,Fare,sex_value, class_, class2_]])
 
 # Prediction logic
 if st.button('Predict'):
